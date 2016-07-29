@@ -821,7 +821,20 @@ var mapView = {
   xhr.send();
 },
 
-
+/*
+  loadJSON: function(path, success, error, successData) {
+    $.getJSON({
+      url: path + "?" + Date.now()
+    }).done(function(data) {
+      if(data !== undefined) {
+        success(data, successData);
+        console.log(data);
+      } else {
+        error(data);
+      }
+    });
+  },
+*/
   // Adds events to log panel and if it's closed sends Toast
   log: function(log_object) {
     var currentDate = new Date();

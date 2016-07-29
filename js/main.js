@@ -821,6 +821,7 @@ var mapView = {
   xhr.send();
 },
 
+
   // Adds events to log panel and if it's closed sends Toast
   log: function(log_object) {
     var currentDate = new Date();
